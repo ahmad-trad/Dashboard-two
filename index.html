@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- link material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp" />
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="container">
+
+        <aside class="dark">
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="logo">
+                </div>
+                <div class="icon">
+                    <span class="material-symbols-sharp dark">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                
+                <a href="#" class="active">
+                    <span class="material-symbols-sharp dark">
+                        grid_view
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp dark">
+                        person_outline
+                    </span>
+                    <h3>customers</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        receipt_long
+                    </span>
+                    <h3>orders</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        insights
+                    </span>
+                    <h3>analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        mail_outline
+                    </span>
+                    <h3>messages</h3>
+                    <span class="message_count">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        inventory
+                    </span>
+                    <h3>products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        report
+                    </span>
+                    <h3>reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        settings
+                    </span>
+                    <h3>settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-sharp">
+                        add
+                    </span>
+                    <h3>add products</h3>
+                </a>
+                <a href="#" id="logout">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                    <h3>logout</h3>
+                </a>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Dashboard</h1>
+            
+
+            <div class="insghts">
+                <!-- start sales card one -->
+                <div class="sales dark">
+                    <span class="material-symbols-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>total sales</h3>
+                            <h1>$25,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle class="one" cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-metued">last 24 hours</small>
+                </div>
+                <!-- end sales card one -->
+                <!-- start sales card two -->
+                <div class="sales dark">
+                    <span class="material-symbols-sharp success">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>total sales</h3>
+                            <h1>$10,789</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle class="two" cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>62%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-metued">last 24 hours</small>
+                </div>
+                <!-- end sales card two -->
+                <!-- start sales card three -->
+                <div class="sales dark">
+                    <span class="material-symbols-sharp waring">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>total sales</h3>
+                            <h1>$54,554</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle class="three" cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>42%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-metued">last 24 hours</small>
+                </div>
+                <!-- end sales card three -->
+            </div>
+
+            <!-- start recent orders -->
+            <div class="recent-orders">
+                <h2>recent orders</h2>
+
+                <table class="dark">
+                    <thead>
+                        <tr>
+                            <th>product name</th>
+                            <th>product number</th>
+                            <th>payment</th>
+                            <th>status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>foldable mine drone</td>
+                            <td>86392</td>
+                            <td>due</td>
+                            <td class="waring-p">pending</td>
+                            <td class="primary-p">details</td>
+                        </tr>
+                        <tr>
+                            <td>foldable mine drone</td>
+                            <td>86392</td>
+                            <td>due</td>
+                            <td class="waring-p">pending</td>
+                            <td class="primary-p">details</td>
+                        </tr>
+                        <tr>
+                            <td>foldable mine drone</td>
+                            <td>86392</td>
+                            <td>due</td>
+                            <td class="waring-p">pending</td>
+                            <td class="primary-p">details</td>
+                        </tr>
+                        <tr>
+                            <td>foldable mine drone</td>
+                            <td>86392</td>
+                            <td>due</td>
+                            <td class="waring-p">pending</td>
+                            <td class="primary-p">details</td>
+                        </tr>
+                        <tr>
+                            <td>foldable mine drone</td>
+                            <td>86392</td>
+                            <td>due</td>
+                            <td class="waring-p">pending</td>
+                            <td class="primary-p">details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" class="show">show all</a>
+            </div>
+            <!-- end recent orders -->
+        </main>
+        <!-- right -->
+        <div class="right">
+            <div class="top-right ">
+                <button class="menu-btn">
+                    <span class="material-symbols-sharp dark">
+                        widgets
+                    </span>
+                </button>
+                <div class="toggle-button">
+                    <span class="material-symbols-sharp">dark_mode</span>
+                    <span class="material-symbols-sharp active">light_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>danile</p>
+                        <small>admin</small>
+                    </div>
+                    <div class="image-pro">
+                        <img src="./images/profile-1.jpg" alt="profile">
+                    </div>
+                </div>
+            </div>
+            <!-- END TOP -->
+            <div class="recent-updates">
+                <h2>recent updates</h2>
+                <div class="updates dark">
+                    <div class="update">
+                        <div class="porfile-photo">
+                            <img src="./images/profile-2.jpg" alt="profile-2">
+                        </div>
+                        <div class="message">
+                            <p><b class="dark">mike tyson</b>  received his order of night lion tech gps drone</p>
+                            <small>2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="porfile-photo">
+                            <img src="./images/profile-3.jpg" alt="profile-3">
+                        </div>
+                        <div class="message">
+                            <p><b class="dark">jon snoe</b> received his order of night lion tech gps drone</p>
+                            <small>2 minutes ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="porfile-photo">
+                            <img src="./images/profile-4.jpg" alt="profile-4">
+                        </div>
+                        <div class="message">
+                            <p ><b class="dark">leo fined</b> received his order of night lion tech gps drone</p>
+                            <small>2 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Recent Updates -->
+
+            <div class="sales-analytics">
+                <h2>sales analytics</h2>
+
+                <div class="item online dark">
+                    <div class="icon">
+                        <span class="material-symbols-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>online orders</h3>
+                            <small>last 24 hours</small>
+                        </div>
+                        <h5 class="success-h">+49%</h5>
+                        <h3>3268</h3>
+                    </div>
+                </div>
+                <div class="item online dark">
+                    <div class="icon offline">
+                        <span class="material-symbols-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>offline orders</h3>
+                            <small>last 24 hours</small>
+                        </div>
+                        <h5 class="danger-h">-13%</h5>
+                        <h3>126</h3>
+                    </div>
+                </div>
+                <div class="item online dark">
+                    <div class="icon green">
+                        <span class="material-symbols-sharp">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>new customers</h3>
+                            <small>last 24 hours</small>
+                        </div>
+                        <h5 class="success-h">+23%</h5>
+                        <h3>846</h3>
+                    </div>
+                </div>
+                <div class="item product-add">
+                    <div class="product">
+                        <span class="material-symbols-sharp">add</span>
+                        <h3>add product</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>

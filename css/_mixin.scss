@@ -1,0 +1,19 @@
+@mixin flex($justco) {
+    display: flex;
+    align-items: center;
+    justify-content: $justco;
+}
+
+%active{
+    color: $primary;
+    background: $light;
+    border-left-color: $primary;
+}
+
+// media query
+
+@mixin media($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}

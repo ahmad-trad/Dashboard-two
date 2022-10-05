@@ -1,0 +1,182 @@
+.right{
+    margin-top: .3rem;
+
+    .top-right{
+        @include flex(space-between);
+        gap: 1rem;
+
+        .menu-btn{
+            display: none;
+        }
+
+        .toggle-button{
+            background: $light;
+            @include flex(space-between);
+            width: 4rem;
+            height: 1.6rem;
+            border-radius: $radius-1;
+            cursor: pointer;
+
+            span{
+                width: 50%;
+                height: 100%;
+                font-size: 1.2rem;
+                @include flex(center);
+                color: $dark;
+
+                &.active{
+                    background: $primary;
+                    color: $white;
+                    border-radius: $radius-1;
+                }
+            }
+        }
+
+        .profile{
+            @include flex(center);
+            text-align: right;
+            gap: .5rem;
+
+            .image-pro{
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .recent-updates{
+        margin-top: .3rem;
+
+        h2{
+            font-size: 1.2rem;
+            color: $info-light;
+            font-weight: 700;
+            margin-bottom: .3rem;
+            text-transform: uppercase;
+        }
+
+        .updates{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            background: $white;
+            border-radius: $card-radius;
+            box-shadow: $box-shadow;
+            padding: 1rem;
+
+            &:hover{
+                box-shadow: none;
+            }
+
+            .update{
+                @include flex(start);
+                gap: 1.2rem;
+
+                .porfile-photo{
+                    width: 3.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .message{
+                    p{
+                        color: $background;
+                        font-size: .8rem;
+
+                        b{
+                            color: black;
+                            font-weight: 500;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sales-analytics{
+        margin-top: .3rem;
+
+        h2{
+            font-size: 1.2rem;
+            color: $info-light;
+            font-weight: 700;
+            margin-bottom: .3rem;
+        }
+
+        .item{
+            @include flex(center);
+            gap: 1.5rem;
+            background: $white;
+            border-radius: $radius-3;
+            box-shadow: $box-shadow;
+            padding: .5rem 1rem;
+            margin-bottom: .7rem;
+
+            &:last-child{margin-bottom: 0;}
+
+            &:hover{box-shadow: none;}
+
+            .icon{
+                color: $white;
+                background: $primary;
+                border-radius: 50%;
+                padding: .4rem;
+                // @include flex(center);
+            }
+
+            .offline{background: $danger;}
+            .green{background: $success;}
+
+            .right{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                h3{
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $dark-variant;
+                    text-transform: uppercase;
+                }
+
+                .success-h{color: $success; font-weight: 400;}
+                .danger-h{color: $danger; font-weight: 400;}
+            }
+
+        }
+        .product-add{
+            background: transparent;
+            @include flex(center);
+            border: .1rem dashed $primary;
+            box-shadow: none;
+            transition: all 100ms ease;
+            cursor: pointer;
+            color: $primary;
+
+            div{
+                @include flex(center);
+            }
+
+            &:hover{
+                background: $primary;
+                color: $white;
+            }
+        }
+
+    }
+}

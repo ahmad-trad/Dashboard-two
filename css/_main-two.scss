@@ -1,0 +1,50 @@
+.recent-orders{
+    margin-top: 1rem;
+
+    h2{
+        margin-bottom: .8rem;
+        color: $info-light;
+        font-weight: 700;
+    }
+
+    table{
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-radius: $card-radius;
+        box-shadow: $box-shadow;
+        background: $white;
+
+        &:hover{
+            box-shadow: none;
+        }
+
+        tbody{
+
+            tr{
+                td{
+                    border-bottom: .1rem solid $light;
+                    height: 2.5rem;
+                    color: $info-light;
+
+                }
+                &:last-child{
+                    td{
+
+                        border-bottom: none;
+                    }
+                }
+
+            }
+            .waring-p{color: $waring;}
+            .primary-p{color: $primary;}
+        }
+    }
+    .show{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $primary;
+        padding: .3rem;
+    }
+}

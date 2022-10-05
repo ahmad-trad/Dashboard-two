@@ -1,0 +1,74 @@
+aside{
+    height: 100vh;
+    padding: .5rem;
+
+    
+
+    .top{
+        @include flex(space-between);
+        margin-bottom: 1.5rem;
+
+        .logo{
+            width: 2rem;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .icon{
+            display: none;
+        }
+    }
+
+    .sidebar{
+        height: 86vh;
+
+
+        a{
+            @include flex(start);
+            width: 100%;
+            gap: 1rem;
+            margin: .3rem 0;
+            color: $info-light;
+            padding: .5rem;
+            border-left: .5rem solid transparent;
+            font-size: .8rem;
+            font-weight: 500;
+            padding-left: .7rem;
+
+            &:hover{
+                color: $primary;
+                margin-left: .4rem;
+            }
+
+            &:active{
+                @extend %active;
+            }
+
+            .message_count{
+                padding: .3rem .5rem; 
+                border-radius: $radius-1;
+                background: $danger;
+                color: $white;
+            }
+        }
+
+        .active{
+            @extend %active;
+        }
+
+        #logout{
+            transform: translateY(4rem);
+            color: red;
+            font-size: 1rem;
+            font-weight: 500;
+
+            &:hover{
+                background-color: rgba($danger, 0.18);
+                border-left-color: $danger;
+            }
+        }
+
+    }
+}

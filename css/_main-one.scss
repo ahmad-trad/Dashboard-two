@@ -1,0 +1,88 @@
+.insghts{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: .7rem;
+
+    .sales{
+        padding: 1rem;
+        background: $white;
+        border-radius: $card-radius;
+        box-shadow: $box-shadow;
+
+        &:hover{box-shadow: none;}
+
+        span{
+            padding: .5rem;
+            background: $primary;
+            border-radius: 50%;
+            color: $white;
+            margin: .5rem 0;
+            font-size: 1.8rem;
+        }
+        .success{background: $success;}
+        .waring{background: $waring;}
+
+        .middle{
+            @include flex(space-between);
+
+            .left{
+                h3{
+                    font-size: 1rem;
+                }
+                h1{
+                    font-size: 1.5rem;
+                    margin: 0;padding: 0;
+                }
+            }
+
+            .progress{
+                width: 92px;
+                height: 92px;
+                position: relative;
+                border-radius: 50%;
+
+                svg{
+                    width: 6rem;
+                    height: 6rem;
+
+                    circle{
+                        fill: none;
+                        stroke: $primary;
+                        stroke-width: .7rem;
+                        stroke-linecap: round;
+                        transform: translate(.4rem, .4rem);
+                        stroke-dasharray: 110;
+                        stroke-dashoffset: 92;
+                    }
+
+                    .one{
+                        stroke-dasharray: 200;
+                        stroke-dashoffset: -30;
+                    }
+
+                    .two{
+                        stroke-dasharray: 80;
+                        stroke-dashoffset: 20;
+                        stroke: $success;
+                    }
+
+                    .three{
+                        stroke: $waring;
+                    }
+                }
+
+                .number{
+                    position: absolute;
+                    top: 0;left: 0;
+                    width: 100%;
+                    height: 100%;
+                    @include flex(center);
+                }
+            }
+        }
+        small{
+            color: $info-light;
+            font-weight: 300;
+        }
+    }
+}
